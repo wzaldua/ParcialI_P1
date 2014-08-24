@@ -16,15 +16,22 @@ import unbosque.Ejercicio4;
 public class testEjercicio4 {
     
     @Test
-    public void testgetValor1(){
+    public void testgetCatetoA(){
         Ejercicio4 n = new Ejercicio4(2,4);
-        Assert.assertEquals(n.getValor1(), 2);     
+        Assert.assertEquals(n.getCatetoA(), 2);     
     }
     
     @Test
-    public void testgetValor2(){
-        Ejercicio2 n = new Ejercicio2(2,4,5);
-        Assert.assertEquals(n.getValor2(), 4);     
+    public void testgetCatetoB(){
+        Ejercicio4 n = new Ejercicio4(2,4);
+        Assert.assertEquals(n.getCatetoB(), 4);     
     }
     
+    
+    @Test
+    public void testcalcularHipotenusa(){
+        Ejercicio4 n = new Ejercicio4(4,3);
+        Assert.assertEquals(n.calcularHipotenusa(),5.0);
+        
+    }
 }

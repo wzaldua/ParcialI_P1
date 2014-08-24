@@ -13,10 +13,25 @@ package unbosque;
 public class Ejercicio4 {
     int a;
     int b;
+    double hipotenusa;
 
     public Ejercicio4(int x, int y) {
         a=x;
         b=y;
+    }
+    
+    public int getCatetoA(){
+        return a;
+    }
+    
+    public int getCatetoB(){
+        return b;
+    }
+    
+    public double calcularHipotenusa(){
+        int aux = (a*a)+(b*b);
+        hipotenusa = Math.sqrt(aux);
+        return hipotenusa;  
     }
     
 }
